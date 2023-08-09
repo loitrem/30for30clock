@@ -1,0 +1,60 @@
+body {
+    background-color: aquamarine;
+    background-image: url('./images/wall.jpg');
+}
+
+.mainWrapper {
+
+}
+
+.main {
+
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid black;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: -30px 20px 0px 10px rgba(0,0,0,.2),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 60px black,
+        0 0 10px rgba(0,0,0,.2);
+        background-color: whitesmoke;
+    background-image: url('./images/face.png');
+    background-size: contain;
+}
+
+.clockFace {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all .05s;
+    transition-timing-function: cubic-bezier(.1, 2.7, .58, 1);
+}
+
+.hour {
+    height: 12px
+}
+
+.min {
+
+}
+
+.second {
+    height: 3px;
+}
